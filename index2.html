@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --black: #181818;
+  --beige: #F6EEE2;
+  --red: #e74c3c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font: 20px/30px sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.text-intro {
+  text-align: center;
+  margin: 10vh 0;
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.page-header {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 3fr;
+  padding: 40px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-bottom: 150px;
+}
+
+.header-text {
+  font-weight: bold;
+}
+
+.section {
+  padding: 150px 0;
+}
+
+.section:nth-of-type(1),
+.section:nth-of-type(3),
+.page-footer {
+  background: var(--beige);
+}
+
+.section-text {
+  margin: 50px 0;
+  max-width: 800px;
+}
+
+.section-btn {
+  display: inline-block;
+  color: var(--beige);
+  background: var(--black);
+  min-width: 200px;
+  height: 50px;
+  padding: 9px 40px;
+  text-align: center;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  padding: 15px;
+}
+
+.page-footer span {
+  color: var(--red);
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="text-intro">
+          <h1>Smooth Scrolling With Vanilla JavaScript</h1>
+          <p>Click on the countries to see the effect</p>
+        </div>
+        <header class="page-header">
+          <nav>
+            <ul>
+              <li>
+                <a href="#portugal">Portugal</a>
+              </li>
+              <li>
+                <a href="#croatia">Croatia</a>
+              </li>
+              <li>
+                <a href="#malta">Malta</a>
+              </li>
+              <li>
+                <a href="#norway">Norway</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            Europe is a continent located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere. It comprises the westernmost part of Eurasia and is bordered by the Arctic Ocean to the north, the Atlantic Ocean to the west, the Mediterranean Sea to the south, and Asia to the east.
+          </div>
+        </header>
+      </div>
+      <section class="section" id="portugal">
+        <div class="container">
+          <h2>Portugal</h2>
+          <div class="section-text">
+            Portugal, officially the Portuguese Republic, is a country located mostly on the Iberian Peninsula, in southwestern Europe. It is the westernmost sovereign state of mainland Europe, being bordered to the west and south by the Atlantic Ocean and to the north and east by Spain. Its territory also includes the Atlantic archipelagos of the Azores and Madeira, both autonomous regions with their own regional governments.
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Portugal" class="section-btn" target="_blank">
+            Learn More →
+          </a>
+        </div>
+      </section>
+      <section class="section" id="croatia">
+        <div class="container">
+          <h2>Croatia</h2>
+          <div class="section-text">
+            Croatia, officially the Republic of Croatia, is a country in Southeast Europe. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina, and Montenegro to the southeast, sharing a maritime border with Italy. Its capital, Zagreb, forms one of the country's primary subdivisions, along with twenty counties. Croatia has an area of 56,594 square kilometres (21,851 square miles) and a population of 4.28 million, most of whom are Roman Catholics.
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Croatia" class="section-btn" target="_blank">
+            Learn More →
+          </a>
+        </div>
+      </section>
+      <section class="section" id="malta">
+        <div class="container">
+          <h2>Malta</h2>
+          <div class="section-text">
+            Malta, officially known as the Republic of Malta and formerly Melita, is a Southern European island country consisting of an archipelago in the Mediterranean Sea. It lies 80 km (50 mi) south of Italy, 284 km (176 mi) east of Tunisia, and 333 km (207 mi) north of Libya. With a population of about 475,000 over an area of 316 km2 (122 sq mi), Malta is the world's tenth smallest country in area and fifth most densely populated sovereign country. Its capital is Valletta, which is the smallest national capital in the European Union by area at 0.8 km2 (0.31 sq mi).
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Malta" class="section-btn" target="_blank">
+            Learn More →
+          </a>
+        </div>
+      </section>
+      <section class="section" id="norway">
+        <div class="container">
+          <h2>Norway</h2>
+          <div class="section-text">
+            Norway, officially the Kingdom of Norway, is a Nordic country in Northern Europe whose mainland territory comprises the western and northernmost portion of the Scandinavian Peninsula; Mainland Norway and the remote island of Jan Mayen as well as the archipelago of Svalbard form Metropolitan Norway. The subantarctic Bouvet Island is a dependent territory of the Kingdom of Norway. Norway also lays claim to the Antarctic territories of Queen Maud Land and Peter I Island.
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Norway" class="section-btn" target="_blank">
+            Learn More →
+          </a>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <p>
+          <small>Text from <a href="https://en.wikipedia.org/" target="_blank">Wikipedia</a>
+          </small>
+        </p>
+        <p>
+          <small>Made with <span>❤</span> by <a href="https://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+          </small>
+        </p>
+      </footer>
+
+      <script>
+        const links = document.querySelectorAll(".page-header ul a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  console.log(href);
+  console.log(offsetTop);
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+      </script>
+</body>
+</html>

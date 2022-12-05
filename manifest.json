@@ -1,0 +1,33 @@
+{
+    "name": "Proyecto Final Programación 2",
+    "short_name": "Final_Prog_2",
+    "description": "Proyecto Final Romina Nevarez Valdés",
+    "scope": ".",
+    "start_url": "index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "black-translucent",
+    "background_color": "#d5f4ef",
+    "icons": [
+        {
+        "src": "assets/iconos/UAS_logo_72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+        },
+        {
+        "src": "assets/iconos/UAS_logo_128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+        },
+        {
+        "src": "assets/iconos/UAS_logo_256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+        },
+        {
+        "src": "assets/iconos/UAS_logo_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}
