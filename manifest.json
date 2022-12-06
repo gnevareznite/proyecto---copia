@@ -7,7 +7,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "black-translucent",
-    "background_color": "#d5f4ef",
+    "background_color": "#ffffff",
     "icons": [
         {
         "src": "assets/iconos/UAS_logo_72.png",
