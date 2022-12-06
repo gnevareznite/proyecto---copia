@@ -3,7 +3,7 @@
     "short_name": "Final_Prog_2",
     "description": "Proyecto Final Romina Nevarez Valdés",
     "scope": ".",
-    "start_url": "index.html",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "#ffffff",
